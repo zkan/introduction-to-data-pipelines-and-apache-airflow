@@ -15,6 +15,12 @@ echo -e "AIRFLOW_UID=$(id -u)" > .env
 ```
 
 ```sh
-docker-compose build
-docker-compose up
+docker compose build
+docker compose up
+```
+
+To stop Airflow, run:
+
+```bash
+docker compose down
 ```
