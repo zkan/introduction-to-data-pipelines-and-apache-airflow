@@ -1,6 +1,7 @@
 # Introduction to Data Pipelines and Apache Airflow
 
-**Dataset:** [Current Weather Data](https://zkan.notion.site/Dataset-Weather-Data-8fca7345df6941eba0240213d973abd1?pvs=4)
+* **Dataset:** [Current Weather Data](https://zkan.notion.site/Dataset-Weather-Data-8fca7345df6941eba0240213d973abd1?pvs=4)
+* **Preparation:** [Pre-Class Computer Preparation](https://zkan.notion.site/Pre-Class-Computer-Preparation-4563e475d660481dbb54c3ffb9f62455?pvs=4)
 
 ## Table of Content
 
