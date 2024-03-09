@@ -214,7 +214,12 @@ services:
   #   restart: always
   #   command: server /data --console-address ":9001"
 
-  postgres:
+  adminer:
+    image: adminer
+    ports:
+      - 8090:8080
+
+  mydb:
     image: postgres:13
     environment:
       - POSTGRES_USER=postgres
@@ -222,18 +227,20 @@ services:
       - POSTGRES_DB=postgres
     volumes:
       - postgres-data-volume:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD", "pg_isready", "-q", "-d", "postgres", "-U", "postgres"]
-      timeout: 30s
-      interval: 5s
-      retries: 5
-    restart: always
+    ports:
+      - 5432:5432
+    # healthcheck:
+    #   test: ["CMD", "pg_isready", "-q", "-d", "postgres", "-U", "postgres"]
+    #   timeout: 30s
+    #   interval: 5s
+    #   retries: 5
+    # restart: always
 
-  # mailhog:
-  #   image: mailhog/mailhog
-  #   ports:
-  #     - 1025:1025
-  #     - 8025:8025
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - 1025:1025
+      - 8025:8025
 
 volumes:
   airflow-metastore-data-volume:
