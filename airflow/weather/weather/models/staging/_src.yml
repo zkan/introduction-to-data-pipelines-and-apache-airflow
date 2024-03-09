@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: open_weathers
+    schema: public
+    database: postgres
+
+    tables:
+      - name: weathers

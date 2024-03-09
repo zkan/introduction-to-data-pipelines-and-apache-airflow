@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: average_temperature_in_bangkok
+    description: Average temperature in Bangkok
+    columns:
+      - name: avg_temp
+        description: Averate temperature
+        tests:
+          - not_null

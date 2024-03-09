@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_weathers
+    description: Staging weather data
+    columns:
+      - name: timestamp_gmt7
+        description: Timestamp in GMT+7
+        tests:
+          - not_null
+          - unique
+      - name: temp
+        description: Temperature
+        tests:
+          - not_null
