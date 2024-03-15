@@ -29,6 +29,7 @@ x-airflow-common:
     - ./mnt/tests:/opt/airflow/tests
     - ./mnt/logs:/opt/airflow/logs
     - ./mnt/plugins:/opt/airflow/plugins
+    - ./weather:/opt/airflow/dbt
   user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-0}"
   depends_on:
     &airflow-common-depends-on

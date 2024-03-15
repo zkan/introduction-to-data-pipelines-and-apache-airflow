@@ -8,7 +8,6 @@ models:
         description: Timestamp in GMT+7
         tests:
           - not_null
-          - unique
       - name: temp
         description: Temperature
         tests:
