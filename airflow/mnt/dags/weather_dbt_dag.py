@@ -9,7 +9,7 @@ profile_config = ProfileConfig(
     target_name="dev",
     profile_mapping=PostgresUserPasswordProfileMapping(
         conn_id="my_postgres_conn",
-        profile_args={"schema": "dbt_zkan"},
+        profile_args={"schema": "dbt_kan"},
     ),
 )
 
